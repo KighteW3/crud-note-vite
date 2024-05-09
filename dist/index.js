@@ -1,5 +1,13 @@
-"use strict";
-const world = "mundo";
-`Hola ${world}`;
-`Hola ${world}`;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUFBLE1BQU0sS0FBSyxHQUFHLE9BQU8sQ0FBQztBQUN0QixRQUFRLEtBQUssRUFBRSxDQUFDO0FBQ2hCLFFBQVEsS0FBSyxFQUFFLENBQUMifQ==
+document.getElementById("botonMostrar")?.addEventListener("click", function () {
+  const botonMostrar = document.getElementById("botonMostrar");
+  const contenidoOculto = document.getElementById("contenidoOculto");
+  if (botonMostrar && contenidoOculto) {
+    // Oculta el botón y muestra el contenido
+    botonMostrar.style.display = "none";
+    contenidoOculto.classList.remove("oculto");
+  } else {
+    // Muestra el botón y oculta el contenido
+    botonMostrar.style.display = "block";
+    contenidoOculto.classList.add("oculto");
+  }
+});

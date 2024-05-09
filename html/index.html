@@ -3,11 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project-typescript</title>
+    <title>Task</title>
     <link rel="stylesheet" href="../src/css/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
   </head>
-
   <body>
-    <script type="module" src="../dist/index.js"></script>
+    <header>Notes🗒️</header>
+
+    <!-- Main -->
+    <main id="principal">
+      <button id="botonMostrar" class="glowing-btn">
+        <span class="glowing-txt"
+          >CRE<span class="faulty-letter">ATE </span
+          ><span class="faulty-letter">NOT</span>E</span
+        >
+      </button>
+
+      <div id="contenidoOculto" class="oculto">
+        <section class="seccion">
+          <div class="box1">
+            <form action="#" method="post">
+              <input type="text" placeholder="Title" />
+            </form>
+          </div>
+          <div class="box2">Without notes</div>
+        </section>
+      </div>
+    </main>
+    <!-- Main -->
+
+    <!-- particles css -->
+    <div id="particles-js"></div>
+    <footer>Copyright © 2024 | Web Developer: Juan David Carrillo</footer>
+    <!-- script -->
+    <script src="../dist/index.js"></script>
+    <script src="/src/js/particles.min.js"></script>
+    <script src="/src/js/particles.js"></script>
   </body>
 </html>
