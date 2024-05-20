@@ -24,12 +24,26 @@
 
       <div id="contenidoOculto" class="oculto">
         <section class="seccion">
+          <!-- form > box1 -->
           <div class="box1">
             <form action="#" method="post">
-              <input type="text" placeholder="Title" />
+              <input type="text" name="title" placeholder="Titulo..." />
+              <div id="date" class="nowDate"></div>
+              <textarea
+                name="textarea"
+                id="writenote"
+                placeholder="Escribe tu nota..."
+              ></textarea>
             </form>
+            <button id="bottomSave" type="submit" class="btnSave">
+              <img
+                src="../src/font/plus-circle-o-svgrepo-com.svg"
+                alt="pluSave"
+              />
+            </button>
           </div>
-          <div class="box2">Without notes</div>
+          <!-- form > box2 -->
+          <div class="box2">Mostrar notas</div>
         </section>
       </div>
     </main>

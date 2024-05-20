@@ -1,8 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 @import url(./bottomCreateNote.css);
 
 * {
   box-sizing: border-box;
-  font-family: "Press Start 2P", cursive;
 }
 
 body {
@@ -26,6 +26,7 @@ header {
   font-size: 52px;
   text-align: center;
   padding-top: 1rem;
+  font-family: "Press Start 2P", cursive;
 }
 
 footer {
@@ -33,6 +34,7 @@ footer {
   font-size: 14px;
   margin-top: auto;
   text-align: center;
+  font-family: "Press Start 2P", cursive;
 }
 
 main {
@@ -58,12 +60,13 @@ section {
 
 .box1 {
   width: 420px;
-  height: 460px;
-  background: rgba(255, 255, 255, 0.33);
+  height: 520px;
+  background: rgba(255, 255, 255, 0.3);
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
   border: 2px solid rgba(255, 255, 255, 0.3);
   border-radius: 10px;
+  padding: 10px;
 }
 
 .box2 {
@@ -79,6 +82,7 @@ section {
   overflow-y: scroll;
 }
 
+/* Scrool of box 2 */
 .box2::-webkit-scrollbar-track {
   border: 5px solid rgba(255, 255, 255, 0.1);
   background-color: rgba(255, 255, 255, 0.1);
@@ -91,10 +95,11 @@ section {
 }
 
 .box2::-webkit-scrollbar-thumb {
-  background-color: #320c0c;
+  background-color: rgb(50, 12, 12);
   border-radius: 10px;
 }
 
+/* Design responsive*/
 @media (max-width: 975px) {
   section {
     grid-template-columns: repeat(1, 1fr);
@@ -104,8 +109,7 @@ section {
   .box1 {
     justify-self: center;
     width: 350px;
-    height: 280px;
-    transition: 1000ms;
+    height: 300px;
   }
 
   .box2 {
@@ -114,21 +118,97 @@ section {
   }
 }
 
-/* Form */
-input[type="text"] {
-  font-family: monospace;
-  font-size: 18px;
+/* Form of title, date, textNote*/
+input:first-child {
+  font-size: 20px;
   width: 100%;
   padding-top: 1rem;
   background-color: rgba(255, 255, 255, 0);
   border: none;
   border-bottom: 2px solid #ffffffc8;
   color: azure;
+  font-family: "Roboto Mono", cursive;
+  outline: none;
 }
 
 input[type="text"]::placeholder {
-  font-family: monospace;
+  background-color: rgba(255, 255, 255, 0);
+  color: rgb(240, 255, 255);
+  font-size: 25px;
+  font-family: "Roboto Mono", cursive;
+  letter-spacing: 3px;
+  text-indent: 4px;
+}
+
+/* nowDate */
+
+.nowDate {
+  font-family: "Roboto Mono", cursive;
+  margin: 6px 0px 0px 2px;
+  font-size: 14px;
+  text-transform: capitalize;
+  color: rgb(240, 255, 255);
+  text-indent: 5px;
+}
+
+/* This is textarea of readNote */
+#writenote {
+  font-family: "Roboto Mono", cursive;
+  margin-top: 7px;
+  resize: none;
+  height: 371px;
+  width: 100%;
+  border-radius: 8px 8px 8px 8px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  background-color: rgba(50, 12, 12, 0.15);
   color: azure;
-  text-align: center;
-  font-size: 30px;
+  font-size: 16px;
+  outline: none;
+}
+
+#writenote::placeholder {
+  font-size: 18px;
+  color: white;
+  font-family: "Roboto Mono", cursive;
+  letter-spacing: 1px;
+}
+
+/* writenote design responsive */
+
+@media (max-width: 975px) {
+  #writenote {
+    height: 200px;
+  }
+}
+
+/* Scrool of writenote */
+#writenote::-webkit-scrollbar-track {
+  border: 5px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+#writenote::-webkit-scrollbar {
+  width: 12px;
+  background-color: #ffffff1a;
+}
+
+#writenote::-webkit-scrollbar-thumb {
+  background-color: rgb(50, 12, 12);
+  border-radius: 10px;
+}
+
+/* Bottom save tittle, nowDate, textNote */
+
+.btnSave {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px 10px 10px 10px;
+  border: 2px solid #ffffff66;
+}
+
+.btnSave img {
+  width: 40px;
+  height: 40px;
+  padding: 3px 0px 1px 0px;
 }

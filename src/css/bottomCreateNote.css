@@ -22,7 +22,6 @@
   font-size: 2em;
   font-weight: 900;
   letter-spacing: 1em;
-
   -webkit-box-shadow:
     inset 0px 0px 0.5em 0px var(--glow-color),
     0px 0px 0.5em 0px var(--glow-color);
@@ -36,6 +35,7 @@
 }
 
 .glowing-txt {
+  font-family: "press start 2p", cursive;
   float: left;
   margin-right: -0.8em;
   -webkit-text-shadow:
