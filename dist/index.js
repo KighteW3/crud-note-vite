@@ -1,15 +1,32 @@
 // bottomShow Form
-document.getElementById("botonMostrar")?.addEventListener("click", function () {
-  const botonMostrar = document.getElementById("botonMostrar");
-  const contenidoOculto = document.getElementById("contenidoOculto");
-  if (botonMostrar && contenidoOculto) {
-    // Oculta el botón y muestra el contenido
-    botonMostrar.style.display = "none";
-    contenidoOculto.classList.remove("oculto");
+document.getElementById("bottomShow")?.addEventListener("click", function () {
+  const bottomShow = document.getElementById("bottomShow");
+  const bottomHeader = document.getElementById("bottomHeader");
+  const bottomFooter = document.getElementById("bottomFooter");
+  const hiddenContent = document.getElementById("hiddenContent");
+  if (bottomShow && bottomHeader && bottomFooter && hiddenContent) {
+    //  Hidden the button and show the hidden content
+    bottomShow.style.display = "none";
+    // header source specifications
+    bottomHeader.style.fontFamily = "Roboto";
+    bottomHeader.style.fontSize = "52px";
+    bottomHeader.style.paddingTop = "0rem";
+    bottomHeader.style.fontWeight = "bold";
+    bottomHeader.style.letterSpacing = "2px";
+
+    // footer source specifications
+    bottomFooter.style.fontFamily = "Roboto";
+    bottomFooter.style.fontSize = "20px";
+    bottomFooter.style.fontWeight = "bold";
+    bottomFooter.style.letterSpacing = "2px";
+    bottomFooter.style.paddingBottom = "1rem";
+
+    // contendio oculto de la fuente
+    hiddenContent.classList.remove("hidden");
   } else {
-    // Muestra el botón y oculta el contenido
-    botonMostrar.style.display = "block";
-    contenidoOculto.classList.add("oculto");
+    // show the button and hide the hidden content
+    bottomShow.style.display = "block";
+    hiddenContent.classList.add("hidden");
   }
 });
 

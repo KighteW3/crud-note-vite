@@ -1,7 +1,7 @@
-/* Boton Create Note */
+/* Bottom Create Note */
 
 :root {
-  --glow-color: hsl(351, 87%, 41%);
+  --glow-color: hsla(351, 100%, 50%, 0.857);
 }
 
 *,
