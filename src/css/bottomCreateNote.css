@@ -1,7 +1,7 @@
 /* Bottom Create Note */
 
 :root {
-  --glow-color: hsla(351, 100%, 50%, 0.857);
+  --glow-color: #ffffff;
 }
 
 *,
@@ -82,7 +82,7 @@
 }
 
 .glowing-btn:hover {
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(133, 131, 131, 0.9);
   text-shadow: none;
   animation: none;
 }

@@ -8,6 +8,7 @@ document.getElementById("bottomShow")?.addEventListener("click", function () {
     //  Hidden the button and show the hidden content
     bottomShow.style.display = "none";
     // header source specifications
+    bottomHeader.style.textTransform = "uppercase";
     bottomHeader.style.fontFamily = "Roboto";
     bottomHeader.style.fontSize = "52px";
     bottomHeader.style.paddingTop = "0rem";
@@ -18,8 +19,9 @@ document.getElementById("bottomShow")?.addEventListener("click", function () {
     bottomFooter.style.fontFamily = "Roboto";
     bottomFooter.style.fontSize = "20px";
     bottomFooter.style.fontWeight = "bold";
-    bottomFooter.style.letterSpacing = "2px";
-    bottomFooter.style.paddingBottom = "1rem";
+    bottomFooter.style.letterSpacing = "1px";
+    bottomFooter.style.paddingBottom = "8px";
+    bottomFooter.style.textTransform = "uppercase";
 
     // contendio oculto de la fuente
     hiddenContent.classList.remove("hidden");
