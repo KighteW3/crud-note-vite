@@ -6,7 +6,8 @@
   "main": "html/index.html",
   "scripts": {
     "build": "rimraf ./dist && npx tsc",
-    "start": "npm run build && node dist/index.js",
+    "start": "npm run build",
+    "start:node": "npm run build && node ./dist/index.js",
     "clean": "rimraf ./dist ./types",
     "start:dev": "npx nodemon --inspect",
     "test": "echo \"Error: no test specified\" && exit 1",

@@ -6,6 +6,13 @@
     <title>Task</title>
     <link rel="stylesheet" href="../src/css/index.css" />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
       rel="stylesheet"
     />
@@ -35,12 +42,22 @@
                 placeholder="Escribe tu nota..."
               ></textarea>
             </form>
-            <button id="bottomSave" type="submit" class="btnSave">
-              <img src="../src/font/plus-svgrepo-com.svg" alt="pluSave" />
+            <button
+              aria-label="Form save"
+              id="btnSave"
+              type="submit"
+              class="btnSave"
+            >
+              <i class="fa-solid fa-plus"></i>
             </button>
           </div>
           <!-- form > box2 -->
-          <div class="box2">Mostrar notas</div>
+          <div class="box2" id="box2">
+            <div class="title-content">
+              <h1 class="title">Notas</h1>
+            </div>
+            <div id="text-content"></div>
+          </div>
         </section>
       </div>
     </main>
