@@ -180,17 +180,63 @@ input[type="text"]::placeholder {
   border: 2px solid #ffffff66;
 }
 
-.fa-solid {
-  color: white;
-  padding-top: 5px;
-  width: 30px;
-  height: 30px;
-  border: 3px solid white;
-  border-radius: 50%;
+.btnSave img {
+  width: 40px;
+  height: 40px;
+  padding: 3px 0px 1px 0px;
 }
 
-/* show tittle */
+.btnSave:hover {
+  background: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+}
+
+/* show tittle box 2*/
 
 .title {
   text-align: center;
+}
+
+/* text-content | information of form */
+
+.text-content {
+  display: flex;
+  background: rgba(255, 255, 255, 0);
+  border: 3px groove rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  position: relative;
+  left: 20px;
+  width: 90%;
+  height: 664px;
+  resize: none;
+  outline: none;
+  overflow: auto;
+  justify-content: center;
+  bottom: 8px;
+}
+
+/* Scrool of text-content */
+.text-content::-webkit-scrollbar-track {
+  border: 5px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.text-content::-webkit-scrollbar {
+  width: 12px;
+  background-color: #ffffff1a;
+}
+
+.text-content::-webkit-scrollbar-thumb {
+  background-color: rgb(217, 213, 213, 0.6);
+  border-radius: 10px;
+}
+
+/* media query text-content responsive design */
+@media (max-width: 975px) {
+  .text-content {
+    width: 90%;
+    height: 325px;
+    bottom: 12px;
+  }
 }

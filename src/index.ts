@@ -1,3 +1,5 @@
+import { handleForm, getNowDate } from "./btnSave";
+
 // bottomShow Form
 document.getElementById("bottomShow")?.addEventListener("click", function () {
   const bottomShow = document.getElementById("bottomShow");
@@ -37,20 +39,12 @@ document.getElementById("bottomShow")?.addEventListener("click", function () {
   }
 });
 
-/* NowDate Form, send information from javascript to HTML */
-document.addEventListener("DOMContentLoaded", (_event) => {
-  const date = document.getElementById("date") as HTMLElement;
-  const nowDate = new Date();
-  const options: object = {
-    weekday: "long",
-    day: "2-digit",
-    month: "2-digit",
-    year: "numeric",
-    hour: "2-digit",
-    minute: "2-digit",
-    hour12: true,
-  };
-  const formattedDate = nowDate.toLocaleString("es-ES", options);
+// NowDate Form, send information from javascript to HTML
+document.addEventListener("DOMContentLoaded", () => {
+  getNowDate(); // Get the current date and time
+});
 
-  date.innerText = formattedDate; // Set the date to the formatted date
+/* getFormData, send information from HTML to server */
+document.addEventListener("DOMContentLoaded", () => {
+  handleForm();
 });
