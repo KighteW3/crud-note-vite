@@ -191,18 +191,25 @@ input[type="text"]::placeholder {
   cursor: pointer;
 }
 
-/* show tittle box 2*/
+/* text-content | information of form /* show tittle box 2*/
+
+/* media query text-content responsive design */
+@media (max-width: 975px) {
+  .text-content {
+    width: 90%;
+    height: 325px;
+    bottom: 12px;
+  }
+}
 
 .title {
   text-align: center;
 }
 
-/* text-content | information of form */
-
 .text-content {
   display: flex;
-  background: rgba(255, 255, 255, 0);
-  border: 3px groove rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px groove rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   position: relative;
   left: 20px;
@@ -213,6 +220,7 @@ input[type="text"]::placeholder {
   overflow: auto;
   justify-content: center;
   bottom: 8px;
+  flex-wrap: wrap;
 }
 
 /* Scrool of text-content */
@@ -224,7 +232,7 @@ input[type="text"]::placeholder {
 
 .text-content::-webkit-scrollbar {
   width: 12px;
-  background-color: #ffffff1a;
+  background-color: rgba(255, 255, 255, 0.102);
 }
 
 .text-content::-webkit-scrollbar-thumb {
@@ -232,11 +240,17 @@ input[type="text"]::placeholder {
   border-radius: 10px;
 }
 
-/* media query text-content responsive design */
-@media (max-width: 975px) {
-  .text-content {
-    width: 90%;
-    height: 325px;
-    bottom: 12px;
-  }
+.text-content-box {
+  width: 80%;
+  height: 130px;
+  margin-top: 36px;
+  background: rgba(89, 150, 190, 0.493);
+  border-radius: 50px 10px 50px 0px;
+  padding: 10px 0 0px 110px;
+}
+
+.text-content-box:hover {
+  transform: rotate3d(0, 0, 1, -2deg);
+  box-shadow: 20px 10px 10px rgba(255, 255, 255, 0.2);
+  cursor: pointer;
 }

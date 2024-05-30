@@ -1,5 +1,5 @@
 /* NowDate Form, send information from javascript to HTML */
-function getNowDate(): void {
+function getNowDate() {
   const date = document.getElementById("date") as HTMLElement;
   const nowDate = new Date();
   const options: object = {
@@ -13,6 +13,7 @@ function getNowDate(): void {
   };
   const formattedDate = nowDate.toLocaleString("es-ES", options);
   date.innerText = formattedDate; // Set the date to the formatted date
+  return formattedDate;
 }
 
 // formHandler.ts
@@ -25,11 +26,11 @@ function handleForm(): void {
   form.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    const titleValue = title.value;
-    const textareaValue = textarea.value;
+    const titleValue: string = title.value;
+    const textareaValue: string = textarea.value;
+    const dateValue = getNowDate();
 
-    console.log(titleValue);
-    console.log(textareaValue);
+    // send the form data to the server
   });
 }
 
