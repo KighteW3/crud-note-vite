@@ -65,8 +65,8 @@ section {
   display: flex;
   justify-content: center;
   font-family: "Roboto Mono", cursive;
-  width: 400px;
-  height: 750px;
+  width: 450px;
+  height: 770px;
   background: rgba(255, 255, 255, 0.3);
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
@@ -195,7 +195,9 @@ input[type="text"]::placeholder {
   cursor: pointer;
 }
 
-/* text-content | information of form /* show tittle box 2*/
+.btnSave:active {
+  transform: scale(0.98);
+}
 
 /* media query text-content responsive design */
 @media (max-width: 975px) {
@@ -209,14 +211,14 @@ input[type="text"]::placeholder {
 .text-content {
   display: grid;
   width: 100%;
-  height: 680px;
+  height: 750px;
   resize: none;
   outline: none;
-  overflow: auto;
+  overflow-y: scroll;
   justify-items: center;
   grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: 25% 10rem;
-  margin-top: -10px;
+  grid-template-rows: 10rem 10rem 10rem 10rem 10rem;
+  margin-top: -20px;
 }
 
 /* Scrool of text-content */
@@ -237,18 +239,43 @@ input[type="text"]::placeholder {
 }
 
 .text-content-box {
-  width: 80%;
-  height: 120px;
+  position: relative;
+  width: 90%;
+  height: 130px;
   border: 1px solid rgba(0, 0, 0, 0.25);
   background-color: rgba(0, 0, 0, 0.45);
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
-  border-radius: 50px 20px 50px 0px;
   padding: 10px 0 0px 20px;
   margin-top: 40px;
+  border-radius: 12px 12px 18px 18px;
 }
 
 /* text-content-box hover */
 .text-content-box:hover {
   cursor: pointer;
-  transform: rotate(-2deg);
+  border-bottom: 2px solid rgb(255, 255, 255, 0.3);
+}
+
+/* information of text-content-box  titleh3 and Data nota*/
+
+.titleh3 {
+  position: relative;
+  width: 50%;
+  font-size: 20px;
+  bottom: 22px;
+  overflow: hidden;
+}
+
+.text-paragraph {
+  position: relative;
+  font-size: 14px;
+  right: 10px;
+  top: 5px;
+}
+
+.date-text {
+  position: absolute;
+  font-size: 14px;
+  right: 10px;
+  top: 0;
 }
