@@ -1,4 +1,6 @@
 import { handleForm, getNowDate } from "./btnSave";
+import "./css/index.css";
+import "./css/bottomCreateNote.css";
 // bottomShow Form
 document.getElementById("bottomShow")?.addEventListener("click", function() {
   const bottomShow = document.getElementById("bottomShow") as HTMLButtonElement;
