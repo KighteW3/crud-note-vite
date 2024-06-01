@@ -127,6 +127,9 @@ input[type="text"]::placeholder {
   color: rgb(240, 255, 255);
   text-indent: 5px;
 }
+.nowDate:hover {
+  cursor: default;
+}
 
 /* This is textarea of readNote */
 #writenote {
@@ -253,7 +256,9 @@ input[type="text"]::placeholder {
 /* text-content-box hover */
 .text-content-box:hover {
   cursor: pointer;
-  border-bottom: 2px solid rgb(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgb(255, 255, 255, 0.3);
+  transition-property: border-bottom;
+  transition-duration: 1000ms;
 }
 
 /* information of text-content-box  titleh3 and Data nota*/
