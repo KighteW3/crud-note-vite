@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
         "rootDir": "./src",
-        "outDir": "./dist",
+        "outDir": "./public",
         "module": "esnext",
         "target": "esnext",
         "moduleResolution": "node",
